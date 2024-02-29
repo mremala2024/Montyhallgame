@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monty Hall Game for Kids</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Monty Hall Game for Kids</h1>
+    <div class="game-container">
+        <div class="door-container">
+            <div class="door" id="door1" onclick="chooseDoor(1)">
+                <img src="door.jpg" alt="Door 1" class="door-image">
+                <div class="door-label">Door 1</div>
+            </div>
+        </div>
+        <div class="door-container">
+            <div class="door" id="door2" onclick="chooseDoor(2)">
+                <img src="door.jpg" alt="Door 2" class="door-image">
+                <div class="door-label">Door 2</div>
+            </div>
+            <button id="restart-button" onclick="restartGame()">Restart Game</button>
+        </div>
+        <div class="door-container">
+            <div class="door" id="door3" onclick="chooseDoor(3)">
+                <img src="door.jpg" alt="Door 3" class="door-image">
+                <div class="door-label">Door 3</div>
+            </div>
+        </div>
+    </div>
+    <div id="game-message"></div>
+    <script src="script.js"></script>
+</body>
+</html>
